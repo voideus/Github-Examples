@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: voideus/hello-barsoom@0.0.5
+        uses: voideus/hello-barsoom@0.0.6
         with:
           name: 'Green'
       # Use the output from the `hello` step
