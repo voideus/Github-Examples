@@ -7,9 +7,9 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: voideus/hello-barsoom@0.0.3
+        uses: voideus/hello-barsoom@0.0.4
         with:
           name: 'Green'
       # Use the output from the `hello` step
       - name: Get the output
-        run: echo "The greetings for ${{ steps.hello.outputs.greetings }}"
+        run: echo "The greetings for ${{ steps.hello.outputs.greeting }}"
